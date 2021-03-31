@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/footer"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/match_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Match draw"
+        android:textColor="@color/gold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/header"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/player2"
+        app:layout_constraintEnd_toStartOf="@+id/player2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player2" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="TextView"
+        android:textColor="@color/header"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/player1"
+        app:layout_constraintTop_toBottomOf="@+id/match_result" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textColor="@color/header"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/player1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player1"
+        app:layout_constraintTop_toBottomOf="@+id/player1" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/header"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/score1"
+        app:layout_constraintEnd_toEndOf="@+id/player2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player2"
+        app:layout_constraintTop_toTopOf="@+id/score1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="new game"
+        app:backgroundTint="@color/header"
+        app:layout_constraintEnd_toStartOf="@+id/continue_game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score1" />
+
+    <Button
+        android:id="@+id/continue_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="continue game"
+        app:backgroundTint="@color/header"
+        app:layout_constraintBottom_toBottomOf="@+id/new_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/new_game"
+        app:layout_constraintTop_toTopOf="@+id/new_game" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
