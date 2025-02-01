@@ -17,7 +17,7 @@ class StartGame : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        player1.requestFocus();
+        player1.requestFocus()
         start.setOnClickListener {
             if (player1.text.isEmpty() || player2.text.isEmpty()) {
                 Toast.makeText(this, "Please provide the name of both players", Toast.LENGTH_SHORT)
